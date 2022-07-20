@@ -1,3 +1,25 @@
+.toolbar{
+    position: fixed;
+    right: 0;
+    top: 45vh;
+}
+.toolbar li{
+    height: 86px;
+    width: 84px;
+    color: #757575;
+    font-size: 14px;
+    border: 1px solid rgb(245,245,245);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.3s;
+}
+.toolbar li:hover {
+    color: rgb(255,103,0);
+    transition: all 0.3s;
+}
 /*顶栏*/
 .topbar {
     height: 40px;
@@ -11,7 +33,6 @@
     cursor: pointer;
 }
 .topbar-link li{
-    list-style: none;
     float: left;
 }
 .topbar-link a {
@@ -38,13 +59,17 @@
 .cart {
     width: 300px;
     height: 0;
+    position: absolute;
+    top: 40px;
+    right: 18vw;
     line-height: 150px;
-    float: right;
-    transition: all 1s;
     overflow: hidden;
     color: black;
     text-align: center;
     box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+    transition: all 1s;
+    z-index: 1;
+    background-color: #fff;
 }
 .topbar-shopper:hover  ~ .cart{
     height: 150px;
@@ -52,21 +77,19 @@
 }
 /*logo导航栏*/
 .logoNav {
-    padding: 25px 8vw;
+    padding: 22px 8vw 18px 8vw;
     position: relative;
 }
 .logo {
     width: 56px;
     height: 56px;
-    margin: 0 200px 0 4px;
-
+    margin: 0 180px 0 4px;
 }
 .logoNav-ul {
     display: inline-block;
     line-height: 56px;
 }
 .logoNav-ul li{
-    list-style: none;
     float: left;
     margin-right: 20px;
     transition: color 0.3s;
@@ -82,20 +105,30 @@
     float: right;
     border: 1px solid rgb(224,224,224);
     position: relative;
+    transition: 0.3s all;
 }
 .logoNav-input{
     position: absolute;
-    top: 0;
+    right: 120px;
+    top: 2px;
     width: 150px;
-    height: 28px;
+    height: 25px;
     border: none;
     padding: 10px;
 }
-.logoNav-input:hover ~ .search{
+.search:hover{
     border: 1px solid rgb(176,176,176);
+    transition: 0.3s all;
+}
+.search:hover .searchBtn{
+    border-left: 1px solid rgb(176,176,176);
+    transition: 0.3s all;
 }
 .logoNav-input:focus {
     outline: none;
+}
+.logoNav-input:focus ~ .search{
+    border: 1px solid rgb(255,103,0);
 }
 .searchBtn {
     width: 50px;
@@ -104,7 +137,215 @@
     right: 0;
     top: -1px;
     border-left: 1px solid rgb(224,224,224);
+    line-height: 50px;
+    text-align: center;
+    transition: 0.3s all;
 }
 .searchBtn:hover {
     background-color: rgb(255,103,0);
+    cursor: pointer;
+    transition: 0.3s all;
+}
+/*轮播导航*/
+.swiper {
+    width: 100%;
+    height: 460px;
+    background: url("../assets/36b45c624f42fa81732457e3f9773dbd.webp");
+}
+.midNav {
+    width: 234px;
+    height: 460px;
+    background-color: rgb(63,61,61);
+    position: relative;
+    float: left;
+}
+.midNav ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.midNav li{
+    padding-left: 30px;
+    height: 42px;
+    width: 204px;
+    color: white;
+    line-height: 42px;
+    font-size: 14px;
+}
+.midNav li::after {
+    content: '>';
+    float: right;
+    margin-right: 20px;
+}
+.midNav li:hover{
+    background-color: rgb(255,103,0);
+}
+.mid-more{
+    height: 170px;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mid-more--left{
+    height: 170px;
+    width: 234px;
+    background-color: rgb(95,87,80);
+}
+.mid-more--left li{
+    width: 78px;
+    height: 85px;
+    float: left;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+.mid-more--left li:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+.mid-more--left li img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 3px;
+}
+.mid-more img {
+    width: 316px;
+    height: 170px;
+}
+
+/*产品*/
+.products{
+    background-color: rgb(245,245,245);
+    height: 7095px;
+    width: 100%;
+    margin-top: 25px;
+}
+.productsBanner{
+    height: 120px;
+    margin-top: 25px;
+}
+.products-item {
+    margin-top: 20px;
+}
+.products-item h2{
+    height: 58px;
+    line-height: 58px;
+    font-size: 22px;
+    font-weight: 200;
+}
+.products-item h2 span{
+    font-size: 16px;
+    float: right;
+}
+.products-item h2 span:hover{
+    color: rgb(255,103,0);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.products-item h2 span:hover .moreIcon{
+    background-color: rgb(255,103,06);
+    transition: all 0.3s;
+}
+.moreIcon{
+    background-color: rgb(176,176,176);
+    border-radius: 50%;
+    color: white;
+    font-size: 13px;
+    padding: 4px;
+    margin-left: 2px;
+    transition: all 0.3s;
+}
+.products-item--content {
+    height: 614px;
+    display: flex;
+}
+.products-item--content ul{
+    width: 992px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding-left: 15px;
+}
+.products-item--content li{
+    background-color: #fff;
+    width: 234px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s
+}
+.products-item--content img {
+    transition: all 0.3s;
+}
+.products-item--content li:hover, .products-item--contentLeft:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.products-item--content li img{
+    width: 160px;
+    height: 160px;
+    margin-bottom: 10px;
+}
+.products-item--content li h5{
+    line-height: 21px;
+}
+.products-item--content li h6{
+    line-height: 18px;
+    color: #b0b0b0;
+}
+.price{
+    line-height: 40px;
+    color: #ff6700;
+}
+.price span{
+    line-height: 40px;
+    font-size: 14px;
+    color: #b0b0b0;
+    text-decoration: line-through;
+}
+.toMore {
+    height: 143px !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+}
+.toMore-left {
+    display: inline-block;
+}
+.toMore-seeMore {
+    font-size: 18px;
+}
+.toMore-hot {
+    font-size: 12px;
+    color: #757575;
+}
+.toMoreIcon {
+    color: rgb(255,103,0);
+    border: 3px solid rgb(255,103,0);
+    padding: 6px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/*底部*/
+.footer {
+    height: 472px;
+}
+
+/*网站信息*/
+.siteInfo {
+    height: 266px;
 }
