@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>练习</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+		}
+		input {
+			height: 30px;
+			width: 250px;
+			margin: 10px 10px;
+			padding-left: 28px;
+			border: 1px solid rgb(221,221,221);
+		}
+		input:focus{
+			outline-color: rgb(72,142,231);
+		}
+		.username {
+			background: url(input_icons_24.png) no-repeat 0 -66px;
+		}
+		.username:focus {
+			background: url(input_icons_24.png) no-repeat 0 -106px;
+		}
+		.password {
+			background: url(input_icons_24.png) no-repeat 0 -145px;
+		}
+		.password:focus {
+			background: url(input_icons_24.png) no-repeat 0 -185px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<input type="text" class="username" placeholder="手机号/用户名/邮箱">
+		<input type="password" class="password" placeholder="密码">
+	</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作业2-会员注册表单</title>
+</head>
+<body>
+    <h1>青春不常在，抓紧谈恋爱</h1>
+    <hr>
+    <form action="">
+        <p>
+            <label>昵称：<input type="text" placeholder="请输入昵称" name="username"></label>
+        </p>
+        <p>
+            性别：
+            <label><input type="radio" name="sex" value="male">男</label>
+            <label><input type="radio" name="sex" value="female">女</label>
+        </p>
+        <p>
+            所在城市：
+            <select name="city" id="city">
+                <option value="sh">上海</option>
+                <option value="cd">成都</option>
+                <option value="bj">北京</option>
+            </select>
+        </p>
+        <p>
+            婚姻状况：
+            <label><input type="radio" name="status" value="0">未婚</label>
+            <label><input type="radio" name="status" value="1">已婚</label>
+            <label><input type="radio" name="status" value="2">保密</label>
+        </p>
+        <p>
+            喜欢的类型：
+            <label><input type="checkbox" name="like" value="0">可爱</label>
+            <label><input type="checkbox" name="like" value="1">性感</label>
+            <label><input type="checkbox" name="like" value="2">御姐</label>
+            <label><input type="checkbox" name="like" value="3">萝莉</label>
+            <label><input type="checkbox" name="like" value="4">小鲜肉</label>
+            <label><input type="checkbox" name="like" value="5">大叔</label>
+        </p>
+        <p>
+            <p><label for="intro">个人介绍：</label></p>
+            <textarea name="intro" id="intro" cols="30" rows="10"></textarea>
+        </p>
+        <h4>我承诺</h4>
+        <ul>
+            <li>年满18岁，单身</li>
+            <li>抱着严肃的态度</li>
+            <li>真诚寻找另一半</li>
+        </ul>
+        <p>
+            <label><input type="checkbox" name="agree" value="1">我同意所有条款</label>
+        </p>
+        <p>
+            <input type="submit" value="免费注册">
+            <input type="reset" value="重置">
+        </p>
+    </form>
+
+</body>
+</html>

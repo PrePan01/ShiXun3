@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业2：小米登录框</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 30vh;
+		}
+		.logo {
+			background-color: rgb(255,76,0);
+			width: 36px;
+			height: 36px;
+			display: flex;
+		}
+		.logo img {
+			width: 36px;
+			height: 36px;
+		}
+		.title {
+			font-size: 24px;
+			margin: 28px 0;
+		}
+		input {
+			width: 234px;
+			height: 34px;
+			margin-bottom: 12px;
+			border: 1px solid rgb(234,234,234);
+			color: rgb(234,234,234);
+			padding: 0 10px;
+		}
+		.loginBtn {
+			width: 256px;
+			height: 36px;
+			color: white;
+			border: none;
+			background-color: rgb(255,76,0);
+			font-size: 12px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="logo">
+			<img src="assets/mi-logo.png" alt="">
+		</div>
+		<div class="title">
+			小米账号登录
+		</div>
+		<input type="text" class="username" placeholder="邮箱/手机/小米ID">
+		<input type="text" class="password" placeholder="密码">
+		<button class="loginBtn">登录</button>
+	</div>
+</body>
+</html>

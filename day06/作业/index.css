@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+.container {
+    padding: 0 16%;
+}
+.topbar {
+    height: 30px;
+    background-color: rgb(43,48,59);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topbar li {
+    list-style: none;
+    float: left;
+    color: white;
+    font-size: 12px;
+}
+.topbar li span:first-child {
+    padding: 0 8px;
+}
+
+.nav {
+    height: 50vh;
+    background-color: rgb(24,28,40);
+}
+.nav-left {
+    height: 100%;
+    background-color: rgb(27,42,63);
+    width: 200px;
+    display: inline-block;
+    position: relative;
+}
+.nav-left ul {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.nav-left li {
+    width: 160px;
+    color: white;
+    padding: 7px 20px;
+    font-size: 13px;
+    list-style: none;
+}
+.nav-left li::after {
+    content: '>';
+    float: right;
+}
+.nav-right {
+    height: 100%;
+    width: 600px;
+    float: right;
+    background: url("assets/banner.png") 600px 450px;
+}
+.detail {
+    height: 80vh;
+    padding-bottom: 10vh;
+}
+.detail-title {
+    text-align: center;
+    margin: 25px 0;
+}
+.detail-class {
+    height: 60%;
+    width: 100%;
+    border: 1px solid rgb(204,204,204);
+    padding: 50px;
+    border-radius: 10px;
+}
+.detail-class--left {
+    width: 40%;
+    display: inline-block;
+}
+.detail-class--left h2 {
+    width: 4em;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(204,204,204);
+}
+.classIntro {
+    font-size: 12px;
+    line-height: 25px;
+    color: grey;
+    margin-bottom: 20px;
+}
+.classStart {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid orange;
+    width: 160px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+.detail-class--right {
+    width: 50%;
+    float: right;
+}
+.footer {
+    height: 50vh;
+    background-color: rgb(46,48,51);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.footer dl {
+    display: inline-block;
+}
+.footer dt {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.footer dd {
+    color: lightgray;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+.footer-info {
+    width: 180px;
+    font-size: 10px;
+    color: lightgray;
+    line-height: 20px;
+}
+.footer-info div:last-child {
+    margin-top: 10px;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    color: white;
+    background-color: rgb(0,164,255);
+    text-align: center;
+}
