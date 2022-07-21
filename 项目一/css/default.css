@@ -5,6 +5,7 @@
 .content {
     width: 1226px;
     margin: 0 auto;
+    position: relative;
 }
 li {
     list-style: none;
