@@ -156,6 +156,50 @@
     z-index: 3;
 }
 
+.midNav-left {
+    width: 992px;
+    height: 460px;
+    background-color: #FFF;
+    position: absolute;
+    left: 234px;
+    top: -20px;
+    display: none;
+    color: black;
+    font-size: 40px;
+    line-height: 460px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+}
+.midNav li:nth-child(1):hover .midNav-phone{
+    display: block;
+}
+.midNav li:nth-child(2):hover .midNav-tv{
+    display: block;
+}
+.midNav li:nth-child(3):hover .midNav-pad{
+    display: block;
+}
+.midNav li:nth-child(4):hover .midNav-out{
+    display: block;
+}
+.midNav li:nth-child(5):hover .midNav-ear{
+    display: block;
+}
+.midNav li:nth-child(6):hover .midNav-home{
+    display: block;
+}
+.midNav li:nth-child(7):hover .midNav-smart{
+    display: block;
+}
+.midNav li:nth-child(8):hover .midNav-power{
+    display: block;
+}
+.midNav li:nth-child(9):hover .midNav-child{
+    display: block;
+}
+.midNav li:nth-child(10):hover .midNav-life{
+    display: block;
+}
 .midNav ul{
     position: absolute;
     top: 50%;
