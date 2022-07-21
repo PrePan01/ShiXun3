@@ -1,0 +1,199 @@
+.topTitle {
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 7%);
+    position: relative;
+    z-index: 100;
+}
+.topTitle h2{
+    font-size: 18px;
+}
+.topTitle h2 span{
+    font-size: 14px;
+    float: right;
+}
+/*登录提示*/
+.loginNotice {
+    background: #f7f7f7;
+    width: 100%;
+    text-align: center;
+    height: 48px;
+    line-height: 46px;
+    color: #333;
+    font-size: 14px;
+    /*margin-top: 5px;*/
+}
+.loginNotice span:nth-child(2) {
+    color: #ff6700;
+    padding: 0 20px;
+}
+/*选购*/
+.buyGoods {
+    display: flex;
+}
+.goodsPic img{
+    height: 560px;
+    width: 560px;
+    margin-right: 42px;
+}
+.buy {
+    padding-top: 32px;
+    margin-left: 20px;
+}
+.buy-title {
+    font-size: 24px;
+}
+.buy-detail {
+    padding: 8px 0;
+    font-size: 14px;
+}
+.buy-detail span:first-child {
+    color: #ff6700;
+}
+.buy-detail span:nth-child(2) {
+    color: #B0B0B0;
+}
+.buy-price span:first-child {
+    color: #ff6700;
+    font-size: 18px;
+}
+.buy-price span:nth-child(2) {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #b0b0b0;
+    text-decoration: line-through;
+}
+.line {
+    margin-top: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+/*以旧换新*/
+.toNew {
+    width: 180px;
+    height: 42px;
+    background: #ff6700;
+    color: white;
+    margin: 26px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.address {
+    padding: 30px 30px;
+    position: relative;
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+}
+.address-name {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.address-name i{
+    margin-right: 10px;
+}
+.address-name span:last-child{
+    color: #ff6700;
+    margin-left: 10px;
+}
+.goodState {
+    margin: 3px 24px;
+    font-size: 14px;
+    color: #ff6700;
+
+}
+.goodOptionPart{
+    margin: 30px 0;
+}
+.smallGoodPic {
+    width: 120px;
+    height: 120px;
+}
+.goodTitle {
+    margin: 20px 0 0;
+    color: #2a2a2a;
+    font-size: 18px;
+    font-weight: bold;
+}
+.goodOptionTitle {
+    font-size: 18px;
+    margin-top: 15px;
+}
+.goodOption {
+    width: 290px;
+    height: 40px;
+    border: 1px solid #ff6700;
+    color: #ff6700;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+.priceSum{
+    background: #f9f9fa;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.priceSum-title {
+    line-height: 30px;
+    color: #616161;
+    height: 30px;
+    font-size: 14px;
+}
+.priceSum-price {
+    color: #ff6700;
+    font-size: 24px;
+    padding-top: 20px;
+}
+.addCart {
+    width: 298px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 16px;
+    background-color: #ff6700;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin-right: 5px;
+}
+.like {
+    display: inline-block;
+    width: 140px;
+    height: 52px;
+    line-height: 52px;
+    background-color: rgb(176,176,176);
+    color: white;
+    text-align: center;
+}
+.detail-control {
+    margin-top: 30px;
+    border-top: 1px solid rgb(224,224,224);
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.detail-control li{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    width: 168px;
+    color: #757575;
+    font-size: 18px;
+    border-right: 1px solid rgb(224,224,224);
+}
+.detail-control li:last-child {
+    border-right: none;
+}
+.detailPic, .wechat img {
+    width: 100%;
+}
+.wechat {
+    background-color: rgb(245,245,245);
+    padding-bottom: 60px;
+}
+.wechat h2 {
+    padding: 33px 0;
+}
