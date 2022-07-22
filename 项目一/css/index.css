@@ -387,7 +387,7 @@
     line-height: 40px;
     color: #ff6700;
 }
-.price span{
+.price span,.price-delete{
     line-height: 40px;
     font-size: 14px;
     color: #b0b0b0;
