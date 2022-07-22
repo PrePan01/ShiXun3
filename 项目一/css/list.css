@@ -23,6 +23,9 @@
     display: inline-block;
     color: #424242;
 }
+.search-filter--wrap span:hover{
+    color: #ff6600;
+}
 .search-filter--wrap span:first-child {
     color: #B0B0B0;
 }
