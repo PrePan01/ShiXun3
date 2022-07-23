@@ -558,6 +558,10 @@
     display: flex;
     padding: 40px 0 0 180px;
 }
+.footerLink dd:hover{
+    color: #ff6700;
+    cursor: pointer;
+}
 .call {
     height: 80px;
     padding-left: 30px;
@@ -598,15 +602,27 @@
 .siteInfo-logo {
     width: 56px;
     height: 56px;
+    position: absolute;
+    top: 0;
 }
 .siteInfo-right {
     padding-top: 30px;
     display: inline-block;
-    margin-left: -160px;
+    margin-left: 70px;
+    margin-top: -30px;
+    line-height: 1.6;
 }
 .siteInfo-link {
     font-size: 12px;
-    margin-left: 180px;
+    color: #757575;
+}
+.siteInfo-detail {
+    color: #b0b0b0;
+    font-size: 12px;
+}
+.siteInfo-slogan {
+    left: 50%;
     position: absolute;
-    top: 0;
+    transform: translateX(-50%);
+    margin-top: 80px;
 }
