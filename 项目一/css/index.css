@@ -596,6 +596,7 @@
     /*网站信息*/
 .siteInfo {
     height: 266px;
+    width: 100%;
     background-color: rgb(250,250,250);
     padding-top: 30px;
 }
