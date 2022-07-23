@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="./css/index.css">
 	<link rel="stylesheet" href="./font_3535921_z32a05syuqo/iconfont.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+	
 </head>
 <body>
 	<!--右侧浮动条-->
@@ -101,7 +102,18 @@
 	<!--选购-->
 	<div class="content buyGoods">
 		<div class="goodsPic">
-			<img src="./assets/detail/goods.jpg" alt="">
+			<div class="swiper" style="width: 560px">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./assets/detail/goods.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="./assets/detail/goods.jpg" alt="">
+					</div>
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination"></div>
+			</div>
 		</div>
 		<div class="buy">
 			<h2 class="buy-title">米家新风空调 立式2匹</h2>
@@ -257,8 +269,32 @@
 			<img src="assets/logo-mi2.png" alt="" class="siteInfo-logo">
 			<div class="siteInfo-right">
 				<div class="siteInfo-link">小米商城 | MIUI | 米家 | 米聊 | 多看 | 游戏 | 政企服务 | 小米天猫店 | 小米集团隐私政策 | 小米公司儿童信息保护规则 | 小米商城隐私政策 | 小米商城用户协议 | 问题反馈 | Select Location</div>
+				<div class="siteInfo-link">北京互联网法院法律服务工作站 | 中国消费者协会 | 北京市消费者协会</div>
+				<div class="siteInfo-detail">© mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2020]0276-042号</div>
+				<div class="siteInfo-detail">（京）网械平台备字（2018）第00005号 互联网药品信息服务资格证 (京)-非经营性-2014-0090 营业执照 医疗器械质量公告</div>
+				<div class="siteInfo-detail">增值电信业务许可证 网络食品经营备案 京食药网食备202010048   食品经营许可证</div>
+				<div class="siteInfo-detail">违法和不良信息举报电话：171-5104-4404 知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</div>
 			</div>
 		</div>
+		<img src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/slogan2020.png" alt="" class="siteInfo-slogan">
 	</div>
+	
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"> </script>
+	<script>
+		var mySwiper = new Swiper ('.swiper', {
+			direction: 'horizontal', // 垂直切换选项
+			loop: true, // 循环模式选项
+			// 如果需要分页器
+			pagination: {
+				el: '.swiper-pagination',
+				clickable :true
+			},
+			// 如果需要前进后退按钮
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+		})
+	</script>
 </body>
 </html>
