@@ -177,6 +177,28 @@
     text-align: center;
     box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
 }
+.midNav-left ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.midNav-left li{
+    width: 240px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+.midNav-left li span{
+    color: black;
+    font-size: 14px;
+    transition: all .3s;
+    line-height: 40px;
+}
+.midNav-left li span:hover {
+    color: #ff6700;
+    cursor: pointer;
+    transition: all .3s;
+}
 .midNav li:nth-child(1):hover .midNav-phone{
     display: block;
 }
@@ -212,7 +234,7 @@
     top: 50%;
     transform: translateY(-50%);
 }
-.midNav li{
+.midNav-item{
     padding-left: 30px;
     height: 42px;
     width: 204px;
@@ -220,12 +242,12 @@
     line-height: 42px;
     font-size: 14px;
 }
-.midNav li::after {
+.midNav-item::after {
     content: '>';
     float: right;
     margin-right: 20px;
 }
-.midNav li:hover{
+.midNav-item:hover{
     background-color: rgb(255,103,0);
 }
 /*轮播*/
