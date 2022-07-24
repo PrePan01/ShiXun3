@@ -51,10 +51,17 @@
     height: 40px;
     float: right;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .topbar-shopper:hover {
     background-color: rgb(255,255,255);
     color: rgb(255,103,0);
+}
+.topbar-shopper i{
+    margin-right: 5px;
 }
 .cart {
     width: 300px;
@@ -62,7 +69,6 @@
     position: absolute;
     right: 0;
     top: 40px;
-    line-height: 150px;
     overflow: hidden;
     color: black;
     text-align: center;
@@ -70,9 +76,10 @@
     transition: all 1s;
     z-index: 1;
     background-color: #fff;
+    line-height: 100px;
 }
 .topbar-shopper:hover  ~ .cart{
-    height: 150px;
+    height: 100px;
     transition: all 1s;
 }
 /*logo导航栏*/
@@ -252,8 +259,8 @@
     background-color: rgb(95,87,80);
 }
 .mid-more--left li{
-    width: 78px;
-    height: 85px;
+    width: 76px;
+    height: 81px;
     float: left;
     color: white;
     font-size: 10px;
@@ -263,6 +270,7 @@
     justify-content: center;
     opacity: 0.5;
     transition: opacity 0.3s;
+    border: 1px solid #665e57;
 }
 .mid-more--left li:hover {
     opacity: 1;
