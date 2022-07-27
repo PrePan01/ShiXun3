@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业一</title>
+	<style>
+		li {
+			display: inline-block;
+			position: relative;
+			width: 400px;
+			height: 280px;
+			overflow: hidden;
+		}
+		.image {
+			width: 400px;
+			height: 280px;
+			transition: all .3s;
+		}
+		.detail {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			padding: 30px 20px;
+			color: white;
+			width: 360px;
+			height: 180px;
+			transform: translateY(200px);
+			transition: all .3s;
+			background: linear-gradient(to bottom,transparent,rgba(0,0,0,0.3));
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			
+		}
+		.detail div:nth-child(1) {
+			margin-bottom: 6px;
+		}
+		.detail div:nth-child(2) {
+			font-size: 20px;
+			font-weight: bold;
+		}
+		li:hover .detail{
+			transform: translateY(0);
+			transition: all .3s;
+		}
+		li:hover .image{
+			transform: scale(1.3);
+			transition: all .3s;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>
+			<img src="./assets/product.jpeg" alt="" class="image">
+			<div class="detail">
+				<div>产品</div>
+				<div>OceanStor Pacific海量存储斩获2021 Interop金奖</div>
+			</div>
+		</li>
+		<li>
+			<img src="./assets/huawei1.jpeg" alt="" class="image">
+			<div class="detail">
+				<div>行业洞察</div>
+				<div>迈向智能世界2030</div>
+			</div>
+		</li>
+		<li>
+			<img src="./assets/huawei2.jpeg" alt="" class="image">
+			<div class="detail">
+				<div>《ICT新视界》刊首语</div>
+				<div>笃行致远，共建具有获得感、幸福感、安全感的智慧城市</div>
+			</div>
+		</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>缩放</title>
+	<style>
+		div {
+			width: 1280px;
+			height: 720px;
+			position: relative;
+		}
+		.play {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: scale(20);
+			opacity: 0;
+			transition: all .5s;
+		}
+		div:hover .play{
+			transform: scale(1);
+			opacity: 1;
+			transition: all .5s;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="./party.jpeg" alt="" class="party">
+		<img src="./play.png" alt="" class="play">
+	</div>
+</body>
+</html>

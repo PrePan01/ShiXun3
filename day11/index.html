@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="./font_3535921_fgv1ny9i5dh/iconfont.css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.out {
+			background-image: url('bg (1).jpg');
+			width: 1366px;
+			height: 600px;
+			overflow: hidden;
+		}
+		.inside::before,.inside::after{
+			content: '';
+			width: 50%;
+			height: 600px;
+			float: left;
+			transition: all .5s;
+			background-image: url('fm.jpg');
+		}
+		.inside::after {
+			background-position: 100% 0;
+		}
+		.out:hover{
+			transition: all .5s;
+		}
+		.out:hover .inside::before{
+			transform: translateX(-683px);
+		}
+		.out:hover .inside::after{
+			transform: translateX(683px);
+		}
+	</style>
+</head>
+<body>
+	<div class="out">
+		<div class="inside"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业1：走马灯</title>
+	<style>
+		@keyframes move {
+			from { }
+			to {
+				transform: translateX(-700%);
+			}
+		}
+		.container {
+			height: 290px;
+			background-color: black;
+			width: 960px;
+			display: flex;
+			align-items: center;
+			overflow: hidden;
+		}
+		img {
+			height: 270px;
+			animation: move 8s infinite linear;
+		}
+		.container:hover img{
+			animation-play-state: paused;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="./assets/7.jpg" alt="">
+		<img src="./assets/1.jpg" alt="">
+		<img src="./assets/2.jpg" alt="">
+		<img src="./assets/3.jpg" alt="">
+		<img src="./assets/4.jpg" alt="">
+		<img src="./assets/5.jpg" alt="">
+		<img src="./assets/6.jpg" alt="">
+		<img src="./assets/7.jpg" alt="">
+		<img src="./assets/1.jpg" alt="">
+	</div>
+</body>
+</html>

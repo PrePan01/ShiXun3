@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业3：《阴阳师》f4</title>
+	<style>
+		@keyframes move {
+			from{
+			
+			}
+			to {
+				transform: translateX(-342px);
+			}
+		}
+		@keyframes move1 {
+			from{
+			
+			}
+			to {
+				transform: translateX(-370px);
+			}
+		}
+		@keyframes moveAll {
+			from{
+				transform: translateX(-100px);
+			}
+			to {
+				transform: translateX(1900px);
+			}
+		}
+		.container {
+			position: absolute;
+			bottom: 0;
+		}
+		.ghost {
+			width: 168px;
+			height: 171px;
+			overflow: hidden;
+			display: inline-block;
+			animation: moveAll 4s linear infinite;
+			margin-right: 150px;
+			
+		}
+		.ghost1 {
+			width: 203px;
+		}
+		.ghostImg1 {
+			height: 160px;
+			animation: move 1s steps(2) infinite;
+		}
+		.ghostImg2 {
+			height: 160px;
+			animation: move1 1s steps(2) infinite;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="ghost">
+			<img src="./assets/txgq_d281c9b.png" alt="" class="ghostImg1">
+		</div>
+		<div class="ghost">
+			<img src="./assets/txgl_c15cfd8.png" alt="" class="ghostImg1">
+		</div>
+		<div class="ghost">
+			<img src="./assets/txgh_fee2457.png" alt="" class="ghostImg1">
+		</div>
+		<div class="ghost ghost1">
+			<img src="./assets/txgc_6d0e9e5.png" alt="" class="ghostImg2">
+		</div>
+	</div>
+</body>
+</html>

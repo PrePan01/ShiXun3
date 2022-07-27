@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            margin: 100px auto;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            /* 3d效果呈现 */
+            transform-style: preserve-3d;
+            /* 大盒子整体旋转,方便观看立体效果 */
+            transform: rotateX(-45deg) rotateY(45deg);
+        }
+
+        .box div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .left {
+            background-color: #f00;
+            /* 左边沿Y轴旋转正90度，往前移动100px */
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .right {
+            background-color: #ff0;
+            /* 左边沿Y轴旋转负90度，往前移动100px */
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .top {
+            background-color: #0f0;
+            /* 左边沿X轴旋转正90度，往前移动100px */
+            transform: rotateX(90deg) translateZ(100px);
+
+        }
+
+        .bottom {
+            background-color: #0ff;
+            /* 左边沿X轴旋转负90度，往前移动100px */
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+
+        .before {
+            background-color: #f0f;
+            /* 往前移动100px */
+            transform: translateZ(100px);
+        }
+
+        .after {
+            background-color: #00f;
+            /* 左边沿Y轴旋转负180度，往前移动100px */
+            transform: rotateY(-180deg) translateZ(100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left">左</div>
+        <div class="right">右</div>
+        <div class="top">上</div>
+        <div class="bottom">下</div>
+        <div class="before">前</div>
+        <div class="after">后</div>
+    </div>
+</body>
+
+</html>

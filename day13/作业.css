@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(247,247,248);
+}
+.title {
+    height: 42px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #fff;
+}
+.title-back {
+    position: absolute;
+    left: 20px;
+}
+.title-t {
+    font-size: 14px;
+}
+
+.container {
+    margin: 12px 11px;
+}
+.card {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.address {
+    height: 85px;
+    display: flex;
+}
+.address-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 11px;
+    margin-top: 24px;
+}
+.address-detail {
+    margin-left: 12px;
+}
+.address-detail div:nth-child(1) {
+    font-size: 15px;
+    margin-bottom: 6px;
+    margin-top: 15px;
+}
+.address-detail div:nth-child(2) {
+    font-size: 12px;
+    line-height: 18px;
+    height: 30px;
+}
+.toDetail {
+    width: 44px;
+    height: 44px;
+    margin-top: 17px;
+}
+
+.goodCard {
+    margin-top: 9px;
+    height: 107px;
+    display: flex;
+    flex-direction: row;
+}
+.goodIcon {
+    width: 85px;
+    height: 85px;
+    margin: 11px;
+}
+.good {
+    height: 32px;
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #262626;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.good-num {
+    margin-left: 22px;
+}
+.keyword {
+    width: 95px;
+    height: 16px;
+    background-color: #f7f7f8;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #888888;
+    margin-top: 7px;
+}
+.goodCard-price {
+    margin-top: 4px;
+}
+.goodCard-price span:nth-child(1) {
+    width: 6px;
+    height: 7px;
+    font-size: 9px;
+    font-weight: bold;
+    font-stretch: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #cf4444;
+}
+.goodCard-price span:nth-child(2) {
+    width: 26px;
+    height: 12px;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #cf4444;
+}
+.goodCard-price span:nth-child(3) {
+    width: 26px;
+    height: 10px;
+    font-size: 9px;
+    font-weight: bold;
+    font-stretch: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.way {
+    height: 125px;
+    margin-top: 6px;
+    padding: 14px 15px 16px 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #262626;
+}
+.way div:nth-child(odd) {
+    display: flex;
+    justify-content: space-between;
+}
+.way-bz {
+    width: 141px;
+    height: 13px;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #989898;
+    margin-left: 9px;
+}
+.price {
+    height: 125px;
+    margin-top: 6px;
+    padding: 14px 15px 16px 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #262626;
+}
+.price div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #262626;
+}
+.price div:last-child span:last-child{
+    color: #cf4444;
+}
+.priceSum{
+    width: 100%;
+    height: 79px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    line-height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.priceSum span:nth-child(1) {
+    width: 29px;
+    height: 12px;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 19px;
+    letter-spacing: 0px;
+    color: #1e1e1e;
+    margin-left: 10px;
+}
+.priceSum span:nth-child(2) {
+    width: 56px;
+    height: 15px;
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 19px;
+    letter-spacing: 0px;
+    color: #cf4444;
+}
+.priceSum span:nth-child(3) {
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #cf4444;
+}
+.toPay{
+    width: 91px;
+    height: 35px;
+    background-image: linear-gradient(90deg,
+    #6fc2aa 5%,
+    #54b196 100%);
+    border-radius: 3px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 10px;
+}
