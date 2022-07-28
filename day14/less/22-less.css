@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 16rem;
+  height: 10.667rem;
+  background-color: lightpink;
+}
+.container .header {
+  width: 8rem;
+  height: 8rem;
+  background-color: lightcyan;
+}
+.container .header div {
+  width: 0.267rem;
+  height: 1.067rem;
+  background-color: lightyellow;
+  transition: all 0.3s;
+}
+.container .header div:hover {
+  width: 5.333rem;
+  height: 5.333rem;
+  transition: all 0.3s;
+}
+/*# sourceMappingURL=22-less.css.map */
