@@ -1,0 +1,244 @@
+.horizontalCenter {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container {
+  background-color: #f6f6f6;
+  width: 100vw;
+  height: 100vh;
+}
+.bgImg {
+  width: 100vw;
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 93.6vw;
+  position: absolute;
+  top: 6.93vw;
+}
+.topbar .msgIcon {
+  width: 6.4vw;
+}
+.topbar .searchIcon {
+  width: 3.33vw;
+  position: absolute;
+  left: 12.2vw;
+}
+.topbar .search {
+  padding-left: 7.47vw;
+  width: 68.66vw;
+  height: 8vw;
+  background-color: #f8f8f8;
+  border-radius: 4vw;
+  border: 0;
+  font-size: 3.2vw;
+}
+.topbar .topbar-rightIcon {
+  width: 5.47vw;
+}
+.banner {
+  width: 96.6vw;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 20vw;
+}
+.nav {
+  width: 93.6vw;
+  height: 49.47vw;
+  background-color: #ffffff;
+  border-radius: 1.33vw;
+  margin: 11.73vw auto 0 auto;
+}
+.nav ul {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.nav li {
+  width: 18.67vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.nav li p {
+  font-size: 3.2vw;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #333333;
+  margin-top: 2.27vw;
+}
+.nav .nav-icon {
+  width: 10.67vw;
+  height: 10.67vw;
+  border-radius: 50%;
+  background-blend-mode: normal,
+    normal;
+}
+.nav .nav-icon img {
+  width: 7vw;
+  transform: translateX(33%) translateY(35%);
+  margin-bottom: 2vw;
+}
+.nav .nav-icon1 {
+  background-image: linear-gradient(-36deg, #fc3f3f 15%, #fd6359 100%), linear-gradient(#ff2a2e, #ff2a2e);
+}
+.nav .nav-icon2 {
+  background-image: linear-gradient(-36deg, #ff9634 15%, #ffba4d 100%), linear-gradient(#ff2a2e, #ff2a2e);
+}
+.nav .nav-icon3 {
+  background-image: linear-gradient(-36deg, #3fb8fe 15%, #51cffc 100%), linear-gradient(#ff2a2e, #ff2a2e);
+}
+.nav .nav-icon3 img {
+  transform: translateX(33%) translateY(47%);
+}
+.nav .nav-icon4 {
+  background-image: linear-gradient(-36deg, #25c8b5 15%, #5ad7ba 100%), linear-gradient(#ff2a2e, #ff2a2e);
+}
+.nav .nav-icon4 img {
+  transform: translateX(33%) translateY(11%);
+}
+.nav .nav-icon5 {
+  background-image: linear-gradient(-36deg, #b82ddb 15%, #c857f8 100%), linear-gradient(#ff2a2e, #ff2a2e);
+}
+.nav .nav-icon5 img {
+  transform: translateX(33%) translateY(31%);
+}
+.nav .nav-icon6 {
+  background-image: linear-gradient(-36deg, #25c8b5 15%, #5ad7ba 100%), linear-gradient(#ff2a2e, #ff2a2e);
+}
+.nav .nav-icon7 {
+  background-image: linear-gradient(-36deg, #fc3f3f 15%, #fd6359 100%), linear-gradient(#ff2a2e, #ff2a2e);
+}
+.nav .nav-icon8 {
+  background-image: linear-gradient(-36deg, #576bff 15%, #7095fd 100%), linear-gradient(#ff2a2e, #ff2a2e);
+}
+.nav .nav-icon8 img {
+  transform: translateX(33%) translateY(65%);
+}
+.nav .nav-icon9 {
+  background-image: linear-gradient(-36deg, #ff4001 15%, #ff7622 100%), linear-gradient(#ff2a2e, #ff2a2e);
+}
+.nav .nav-icon9 img {
+  transform: translateX(33%) translateY(15%);
+}
+.nav .nav-icon10 {
+  background-image: linear-gradient(-36deg, #3fb8fe 15%, #51cffc 100%), linear-gradient(#ff2a2e, #ff2a2e);
+}
+.nav .nav-icon10 img {
+  transform: translateX(33%) translateY(26%);
+}
+.today {
+  width: 85.6vw;
+  height: 59.2vw;
+  background-color: #ffffff;
+  border-radius: 1.33vw;
+  margin: 2.67vw auto 0 auto;
+  padding: 4vw;
+}
+.today .today-title {
+  font-size: 4vw;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0vw;
+  color: #333333;
+}
+.today .today-title .today-title--time {
+  display: inline-block;
+  width: 15.07vw;
+  height: 5.6vw;
+  line-height: 5.6vw;
+  text-align: center;
+  border-radius: 2.8vw;
+  border: solid 0.27vw #fc3f3f;
+  font-size: 3.47vw;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #fc3f3f;
+}
+.today .today-goods {
+  margin-top: 4.8vw;
+}
+.today .today-goods ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.today .today-goods .goodPic {
+  width: 27.07vw;
+  height: 26.8vw;
+  background-color: #f5f7f6;
+  border-radius: 0.53vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.today .today-goods .goodPic img {
+  width: 9.2vw;
+  height: 19.73vw;
+}
+.today .today-goods .goodTitle {
+  width: 24.53vw;
+  height: 7.07vw;
+  font-size: 3.2vw;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 4.13vw;
+  color: #666666;
+  margin-top: 2.53vw;
+}
+.today .today-goods .goodPrice {
+  width: 10vw;
+  height: 3.2vw;
+  font-size: 4vw;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 3.87vw;
+  color: #fc3f3f;
+  margin-top: 3.87vw;
+}
+.tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+  height: 16.67vw;
+  background: url('../assets/index/椭圆28@2x.png') no-repeat;
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+}
+.tab .tabItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2.67vw;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #333333;
+}
+.tab .tabItem img {
+  width: 5.87vw;
+  height: 5.87vw;
+}
+.tab .tabItem .tabActive {
+  color: #fc3f3f;
+}
+.tab .tabItem div {
+  margin: 1.2vw 0 0.8vw 0;
+}
+.tab .vipIcon {
+  margin-left: 2vw;
+}
+.tab .vipIcon img {
+  width: 10vw;
+  height: 10vw;
+}
+/*# sourceMappingURL=index.css.map */
