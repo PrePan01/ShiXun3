@@ -1,3 +1,9 @@
+.blockBase {
+  width: 94.67vw;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
 .top {
   height: 52.53vw;
   background-color: #fc3f3f;
@@ -72,13 +78,13 @@
 }
 .top .vip {
   width: 94.67vw;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
   height: 26.27vw;
   background-color: #362d2d;
   border-radius: 2.67vw;
-  position: absolute;
   bottom: -15vw;
-  left: 50%;
-  transform: translateX(-50%);
 }
 .top .vip .vipContainer {
   display: flex;
@@ -115,9 +121,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  width: 86.53vw;
+  width: 94.67vw;
   height: 13.8vw;
   margin: 4.27vw auto;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 5.33vw;
 }
 .personData .personData-item {
   text-align: center;
@@ -134,7 +142,101 @@
   font-weight: normal;
   font-stretch: normal;
   color: #999999;
-  margin-top: 3.53vw;
+  margin-top: 2.53vw;
+}
+.order {
+  width: 94.67vw;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  height: 30.53vw;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 1.33vw;
+}
+.order .order-operate {
+  width: 92vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.order .order-operate .order-item {
+  width: 14.47vw;
+  text-align: center;
+}
+.order .order-operate .order-item img {
+  width: 5.87vw;
+  margin-top: 7.2vw;
+}
+.order .order-operate .order-item p {
+  font-size: 3.2vw;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #333333;
+  margin-top: 2.67vw;
+}
+.order-title span:nth-child(1) {
+  font-size: 4.27vw;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #333333;
+  margin-left: 4vw;
+}
+.order-title span:nth-child(2) {
+  font-size: 3.47vw;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #999999;
+  margin-left: 54.8vw;
+}
+.other {
+  width: 94.67vw;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  height: 48.93vw;
+  margin-top: 34.53vw;
+}
+.other .other-title span:nth-child(1) {
+  font-size: 4.27vw;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #333333;
+  margin-left: 4vw;
+}
+.other .other-title span:nth-child(2) {
+  font-size: 3.47vw;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #999999;
+  margin-left: 54.8vw;
+}
+.other .other-operate {
+  margin-left: 2vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.other .other-operate .other-item {
+  text-align: center;
+  width: 16vw;
+  margin-right: 9vw;
+  margin-top: 6vw;
+}
+.other .other-operate .other-item img {
+  width: 6.4vw;
+  height: 6.4vw;
+}
+.other .other-operate .other-item p {
+  font-size: 3.2vw;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #333333;
+  margin-top: 2.67vw;
+}
+.other .other-operate div:nth-child(4) {
+  margin-right: 0;
 }
 .tab {
   display: flex;
@@ -165,7 +267,7 @@
   color: #fc3f3f;
 }
 .tab .tabItem div {
-  margin: 1.2vw 0 0.8vw 0;
+  margin: 0.6vw 0 0.8vw 0;
 }
 .tab .vipIcon {
   margin-left: 2vw;
