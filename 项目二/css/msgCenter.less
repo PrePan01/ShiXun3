@@ -1,0 +1,133 @@
+body {
+  background-color: rgb(245,245,245);
+}
+
+.title {
+  background: url("../assets/msgCenter/形状1@2x.png") no-repeat;
+    background-size: 100% 100%;
+  height: 29.73vw;
+  img {
+    width: 100vw;
+  }
+  span {
+    font-size: 4.8vw;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #ffffff;
+    margin-top: 3.6vw;
+    display: inline-block;
+  }
+  span:nth-child(1){
+    margin-left: 2.67vw;
+  }
+  span:nth-child(2){
+    margin-left: 34vw;
+  }
+}
+
+.operate {
+  width: 94.67vw;
+  height: 24.13vw;
+  background-color: #ffffff;
+  box-shadow: 0vw 0.8vw 1.33vw 0vw
+  rgba(227, 227, 227, 0.2);
+  border-radius: 1.33vw;
+  position: absolute;
+  top: 15.73vw;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  .operate-item {
+    text-align: center;
+    img {
+      height: 8.13vw;
+    }
+    p {
+      font-size: 3.47vw;
+      font-weight: normal;
+      font-stretch: normal;
+      color: #333333;
+      margin-top: 2.4vw;
+    }
+  }
+}
+
+.msg {
+  margin-top: 14.13vw;
+  padding-left: 2.67vw;
+  background-color: #fff;
+  .msg-item {
+    height: 18.53vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    img {
+      width: 12vw;
+      height: 12vw;
+    }
+    .msg-info {
+      margin-left: 3.6vw;
+      h3 {
+        font-size: 4vw;
+        font-weight: bold;
+        font-stretch: normal;
+        letter-spacing: 0vw;
+        color: #333333;
+      }
+      p {
+        font-size: 3.2vw;
+        font-weight: normal;
+        font-stretch: normal;
+        color: #666666;
+        margin-top: 2.4vw;
+      }
+    }
+  }
+}
+
+
+
+
+
+.tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+  height: 16.67vw;
+  background: url('../assets/index/椭圆28@2x.png') no-repeat;
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+  .tabItem {
+    img {
+      width: 5.87vw;
+      height: 5.87vw;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2.67vw;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #333333;
+    .tabActive {
+      color: #fc3f3f;
+    }
+    div {
+      margin: 0.6vw 0 0.8vw 0;
+    }
+  }
+  .vipIcon {
+    img {
+      width: 10vw;
+      height: 10vw;
+    }
+    margin-left: 2vw;
+  }
+}

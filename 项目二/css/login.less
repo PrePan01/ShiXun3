@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: rgb(245,246,248);
+  height: 100vh;
+  width: 100vw;
+}
+
+.topBg {
+  width: 100vw;
+}
+
+.login {
+  width: 92vw;
+  height: 73.07vw;
+  background-color: #ffffff;
+  box-shadow: 0.63vw 1.61vw 4.27vw 0vw
+  rgba(130, 131, 132, 0.13);
+  border-radius: 2.67vw;
+  position: absolute;
+  top: 51.4vw;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  .username, .password {
+    width: 80vw;
+    height: 11.73vw;
+    background-color: #ffffff;
+    border-radius: 5.8vw;
+    border: solid 0.27vw #d8d8d8;
+    display: flex;
+    align-items: center;
+    img {
+      width: 4vw;
+      height: 5.6vw;
+      margin-left: 7.47vw;
+    }
+    .sep {
+      width: 0.27vw;
+      height: 3.73vw;
+      background-color: #d8d8d8;
+      display: inline-block;
+      margin-left: 3.33vw;
+    }
+    input {
+      height: 80%;
+      width: 60vw;
+      font-size: 3.47vw;
+      font-weight: normal;
+      font-stretch: normal;
+      color: black;
+      border: none;
+      margin-left: 2.8vw;
+      outline: none;
+    }
+    .pwd-ipt {
+      width: 36vw;
+    }
+    .getCode {
+      margin-left: 3.07vw;
+      font-size: 2.93vw;
+      font-weight: normal;
+      font-stretch: normal;
+      color: #8997a5;
+    }
+  }
+  .loginBtn {
+    width: 80vw;
+    height: 11.73vw;
+    line-height: 11.73vw;
+    text-align: center;
+    background-color: #fc3f3f;
+    border-radius: 5.8vw;
+    font-size: 4.53vw;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #ffffff;
+  }
+}
+
+.rdLogin {
+  position: absolute;
+  top: 176.8vw;
+  width: 69.07vw;
+  left: 50%;
+  transform: translateX(-50%);
+  .rdLogin-title {
+    font-size: 3.47vw;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 7.73vw;
+    color: #bcbcbc;
+    text-align: center;
+  }
+  .rdLogin-title::before, .rdLogin-title::after {
+    content: '';
+    width: 19.07vw;
+    height: 0.13vw;
+    background-color: #bcbcbc;
+    display: inline-block;
+    position: absolute;
+    top: 4vw;
+    left: 0;
+  }
+  .rdLogin-title::after {
+    left: 50vw;
+  }
+  .rdLogin-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 7.6vw;
+    img {
+      width: 12vw;
+      height: 12vw;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.topOperate {
+  margin-top: 2.13vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1.47vw;
+  border-bottom: 1px solid #f2f2f2;
+}
+.topOperate img {
+  height: 5.33vw;
+}
+.topOperate .search {
+  width: 76.13vw;
+  height: 8vw;
+  background-color: #f3f4f8;
+  border-radius: 4vw;
+}
+.nav {
+  height: 193.8vw;
+  overflow: auto;
+  width: 20.53vw;
+}
+.nav li {
+  height: 20.93vw;
+  line-height: 20.93vw;
+  text-align: center;
+  background-color: #f3f4f8;
+  font-size: 3.73vw;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #333333;
+}
+.nav .navActive {
+  color: #fc3f3f;
+  background-color: #ffffff;
+  border-left: 0.67vw solid #fc3f3f;
+}
+.goods {
+  position: absolute;
+  top: 14.4vw;
+  left: 22.67vw;
+}
+.goods .goods-banner {
+  width: 74.67vw;
+  height: 25.33vw;
+}
+.goods .goods-title {
+  font-size: 3.47vw;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0vw;
+  color: #333333;
+  margin: 5.33vw 0 5.87vw 0;
+}
+.goods .goods-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: flex-end;
+  width: 74.67vw;
+}
+.goods .goods-part img {
+  height: 19.6vw;
+  margin-top: 8.53vw;
+}
+.goods .goods-part p {
+  font-size: 3.2vw;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #666666;
+  margin-top: 4.13vw;
+}
+.tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+  height: 16.67vw;
+  background: url('../assets/index/椭圆28@2x.png') no-repeat;
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+}
+.tab .tabItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2.67vw;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #333333;
+}
+.tab .tabItem img {
+  width: 5.87vw;
+  height: 5.87vw;
+}
+.tab .tabItem .tabActive {
+  color: #fc3f3f;
+}
+.tab .tabItem div {
+  margin: 0.6vw 0 0.8vw 0;
+}
+.tab .vipIcon {
+  margin-left: 2vw;
+}
+.tab .vipIcon img {
+  width: 10vw;
+  height: 10vw;
+}
+/*# sourceMappingURL=classification.css.map */
