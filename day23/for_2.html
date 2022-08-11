@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	<div id="container">
+	
+	</div>
+	
+	<script>
+		// 1. 打印人的一生，从1岁到100岁
+		let age = 1
+		while(age <= 100) {
+			console.log(`${age}岁`)
+			age ++
+		}
+		// 2. 计算 1 ~ 100 之间所有整数的和
+		let num = 100, sum = 0
+		while(num > 0) {
+			sum += num
+			num --
+		}
+		console.log(sum)
+		// 3. 弹出一个提示框， 你爱我吗？  如果输入我爱你，就提示结束，否则，一直询问。
+		let love = ''
+		while(love !== '我爱你') {
+			love = prompt('niaiwoma')
+		}
+	</script>
+</body>
+</html>

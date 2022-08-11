@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2.1将数组[2, 0, 6, 2, 77, 0, 52, 0, 25, 7]中去除重复的数据只保留一个，并形成一个从小到大排列的新数组。</title>
+</head>
+<body>
+	<script>
+		let arr = [2, 0, 6, 2, 77, 0, 52, 0, 25, 7]
+		console.log([...new Set(arr.sort((a, b) => a - b))])
+	</script>
+</body>
+</html>

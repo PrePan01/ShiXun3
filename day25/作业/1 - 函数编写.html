@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1 - 函数编写</title>
+</head>
+<body>
+	<script>
+		// 1. 写一个函数，能返回传入的任意两个数字的最大值。
+		function fn1(a, b){return Math.max(a, b)}
+		// 2. 写一个函数，能返回传入的任意三个数字的最大值。
+		function fn2(a, b, c){return Math.max(a, b, c)}
+		// 3. 写一个函数，能判断传入的一个数值是否是质数，如果是质数返回true，如果不是质数返回false，(质数：从2开始只能被1和自身整数的数)
+		function fn3(a) {
+			for(let i = 2;i < a;i++) {
+				if(a % i === 0){
+					return false
+				}
+			}
+			return true
+		}
+		// 4. 写一个函数，能翻转传入的任意数组，并把翻转结果通过返回值返回。
+		function fn4(arr) {
+			for(let i = 0;i < arr.length / 2;i++) {
+				let tmp = arr[i]
+				arr[i] = arr[arr.length - 1 - i]
+				arr[arr.length - 1 - i] = tmp
+			}
+			return arr
+		}
+		// 5. 写一个函数，能对所有传入的数组按照从小到大进行排序，并把排序结果通过返回值返回
+		function fn5(arr) {
+			return arr.sort((a, b) => a - b)
+		}
+	</script>
+
+</body>
+</html>

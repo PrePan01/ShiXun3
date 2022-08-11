@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1.4 有一个从大到小排好序的数组[99,85,82,63,60]。现从页面输入一个数，要求按原来的规律将它插入数组中。</title>
+</head>
+<body>
+	<script>
+		let arr = [99,85,82,63,60]
+		let num = parseInt(prompt())
+		for(let i = arr.length; i >= 0; i--) {
+			if(num > arr[i - 1]) {
+				arr[i] = arr[i - 1]
+			} else {
+				arr[i] = num
+				break
+			}
+		}
+		console.log(arr)
+	</script>
+</body>
+</html>

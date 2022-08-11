@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1 求100以内所有能被3和7整除的数的和</title>
+</head>
+<body>
+	<script>
+		let sum = 0
+		for(let i = 0;i <=100;i ++){
+			if(i % 3 === 0 && i % 7 === 0) {
+				sum += i
+			}
+		}
+		alert(sum)
+	</script>
+</body>
+</html>

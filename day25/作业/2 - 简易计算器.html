@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2 - 简易计算器</title>
+</head>
+<body>
+	<script>
+		function cal (method) {
+			let a = parseInt(prompt('第一个数'))
+			let b = parseInt(prompt('第二个数'))
+			alert(eval(`a${method}b`))
+		}
+		let choice = ''
+		while(choice !== '5') {
+			switch (choice) {
+				case '1': {
+					cal('+')
+					break
+				}
+				case '2': {
+					cal('-')
+					break
+				}
+				case '3': {
+					cal('*')
+					break
+				}
+				case '4': {
+					cal('/')
+					break
+				}
+				default: break
+			}
+			choice = prompt('欢迎使用简易计算器：\n请输入选项\n1.加\n2.减\n3.乘\n4.除\n5.退出\n')
+		}
+	</script>
+</body>
+</html>

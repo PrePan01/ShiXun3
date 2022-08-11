@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4 简易ATM</title>
+</head>
+<body>
+	<script>
+		let money = 100
+		let target = true
+		while (target) {
+			switch (prompt('操作：\n1.存钱\n2.取钱\n3.查余额\n4.退出')) {
+				case '1':
+					money += prompt('存多少钱')*1
+					alert(money)
+					break
+				case '2':
+					money -= prompt('取多少钱')*1
+					alert(money)
+					break
+				case '3':
+					alert(money)
+					break
+				default:
+					target = false
+					break
+			}
+		}
+	</script>
+</body>
+</html>

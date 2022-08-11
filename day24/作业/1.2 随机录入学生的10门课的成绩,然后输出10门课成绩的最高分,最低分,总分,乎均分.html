@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1.2 随机录入学生的10门课的成绩,然后输出10门课成绩的最高分,最低分,总分,乎均分</title>
+</head>
+<body>
+	<script>
+		let arr = []
+		for(let i = 0;i < 10;i++) {
+			arr[i] = parseInt(prompt(`第${i + 1}个成绩`))
+		}
+		let max = arr[0], min = arr[0], sum = 0
+		for(let i = 0;i < 10;i++) {
+			sum += arr[i]
+			arr[i] > max? max = arr[i]: ''
+			arr[i] < min? min = arr[i]: ''
+		}
+		alert(`最高分${max},最低分${min},总分${sum},乎均分${sum / 10}`)
+	</script>
+</body>
+</html>

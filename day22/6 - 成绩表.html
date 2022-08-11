@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>6 - 成绩表</title>
+</head>
+<body>
+	<script>
+		let score = prompt('score')
+		switch (true) {
+			case (score >= 90): alert('A'); break;
+			case (score >= 80 && score < 90): alert('B'); break;
+			case (score >= 70 && score < 80): alert('C'); break;
+			case (score >= 60 && score < 70): alert('D'); break;
+			default: alert('E'); break;
+		}
+	</script>
+</body>
+</html>
