@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	<script>
+		// 1.数组去重
+		let arr = ['c', 'a', 'z', 'a', 'x', 'a', 'x', 'c', 'b']
+		let result = []
+		for(let i of arr) {
+			if(result.indexOf(i) === -1) {
+				result.push(i)
+			}
+		}
+		console.log(result)
+		// 2.数组去重
+		let arr1 = ['c', 'a', 'z', 'a', 'x', 'a', 'x', 'c', 'b']
+		let result1 = []
+		arr1.sort()
+		for(let i of arr1) {
+			if(arr1.indexOf(i) === arr1.lastIndexOf(i)) {
+				result1.push(i)
+			} else {
+				arr1.splice(arr1.indexOf(i), arr1.lastIndexOf(i) - arr1.indexOf(i))
+			}
+		}
+		console.log(result1)
+		
+	</script>
+</body>
+</html>

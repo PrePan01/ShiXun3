@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	<script >
+		// 1. 创建一个电脑对象，该对象要有颜色、重量、品牌、型号，可以看电影、听音乐、打游戏和敲代码。
+		let computer = {
+			color: 'white',
+			weight: '2kg',
+			brand: 'hp',
+			model: '100',
+			movie: function () {
+				console.log('我在看电影')
+			},
+			music: function () {
+				console.log('我在听音乐')
+			},
+			game: function () {
+				console.log('我在打游戏')
+			},
+			code: function () {
+				console.log('我在敲代码')
+			}
+		}
+		computer.movie()
+		computer.music()
+		computer.game()
+		computer.code()
+	</script>
+</body>
+</html>

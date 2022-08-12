@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	<script>
+		function add0(data){
+			return data*1 < 10?'0' + data:data
+		}
+		let targetDate = new Date('2022-10-01 08:00:00').getTime()
+		let during = Math.floor((targetDate - Date.now()) / 1000)
+		let day = add0(Math.floor(during / 3600 / 24))
+		let hour = add0(Math.floor(during / 3600 % 24))
+		let minute = add0(Math.floor(during / 60 % 60))
+		let second = add0(during % 60)
+		
+		console.log(day, hour, minute, second)
+	</script>
+</body>
+</html>

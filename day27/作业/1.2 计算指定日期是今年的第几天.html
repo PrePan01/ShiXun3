@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1.2 计算指定日期是今年的第几天</title>
+</head>
+<body>
+	<script>
+		function getDayNum(date) {
+			let year = new Date(date).getFullYear().toString()
+			return Math.ceil((new Date(date) - new Date(year)) / 86400000) + 1
+		}
+		console.log(getDayNum('2019-2-1'))
+	</script>
+</body>
+</html>

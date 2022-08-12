@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	<h1 style="color: white;text-align: center;font-size: 70px"></h1>
+	<script>
+		let arr = ['0','1','2','3','4','5','6','7','8','9','A', 'B', 'C', 'D', 'E', 'F']
+		let colorStr = '#'
+		for(let i = 0;i < 6;i ++) {
+			colorStr += arr[Math.floor(Math.random() * arr.length)]
+		}
+		document.querySelector("h1").innerText = colorStr
+		document.querySelector("body").setAttribute('style', `background-color: ${colorStr}`)
+	</script>
+</body>
+</html>

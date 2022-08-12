@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	<script>
+		var num = 1;
+		function demo(){
+			// 使用var声明一个变量时，会被提升到作用域顶部,，但赋值的部分不会被提升
+			// var num = 2 提升至此 => var num，此时num为undefined
+			console.log(num);
+			function demoSon(){
+				num = 3;
+			}
+			var num = 2
+			demoSon();
+		}
+		demo(); // 输出 undefined
+	</script>
+</body>
+</html>

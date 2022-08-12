@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	<script>
+		// 1
+		let target = Math.floor(Math.random()*100)
+		let answer
+		while(answer !== target) {
+			answer = prompt('请输入一个数') * 1
+			answer > target? alert('猜大了'):alert('猜小了')
+		}
+		alert('猜对了')
+		// 2
+		let target1 = Math.floor(Math.random()*50)
+		let index = 0
+		let answer1
+		while(answer1 !== target1) {
+			answer1 = prompt('请输入一个数') * 1
+			if(index === 10) {
+				alert('10次了')
+				break
+			}
+			if(answer1 === target1) {
+				alert('猜对了')
+				break
+			}
+			answer1 > target1? alert('猜大了'):alert('猜小了')
+			index++
+		}
+	</script>
+</body>
+</html>z

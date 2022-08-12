@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>date</title>
+</head>
+<body>
+	<h1></h1>
+	<script>
+		let date = new Date()
+		let day
+		switch (date.getDay()) {
+			case 0:
+				day = '日'
+				break;
+			case 1:
+				day = '一'
+				break;
+			case 2:
+				day = '二'
+				break;
+			case 3:
+				day = '三'
+				break;
+			case 4:
+				day = '四'
+				break;
+			case 5:
+				day = '五'
+				break;
+			case 6:
+				day = '六'
+				break;
+		}
+		function add0(data){
+			return data*1 < 10?'0' + data:data
+		}
+		console.log(`今天是：
+		${date.getFullYear()}年${add0(date.getMonth() + 1)}月${add0(date.getDate())}日
+		星期${day}
+		${add0(date.getHours())}:${add0(date.getMinutes())}:${add0(date.getSeconds())}`)
+		
+		
+	</script>
+</body>
+</html>

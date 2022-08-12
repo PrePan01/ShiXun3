@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1.3 随机选学员</title>
+</head>
+<body>
+	<script >
+		let arr = ["鹿晗","王俊凯","蔡徐坤","彭于晏","周杰伦","刘德华","赵本山"]
+		let result = []
+		while (result.length !== 4) {
+			let tmp = arr[Math.floor(Math.random() * arr.length)]
+			if(!result.includes(tmp)) {
+				result.push(tmp)
+			}
+		}
+		console.log(result)
+	</script>
+</body>
+</html>
